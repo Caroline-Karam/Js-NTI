@@ -613,6 +613,206 @@ var w = 20
 // var d4=new Date("2009/9/9")
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Day 3
+
+// built in object (RegExp )
+// Bom (Screen, Navigator, Location)
+// Obj
+
+
+// 1- Object
+// var student = [1,"ali",17,true]
+
+
+//literal creation
+
+
+// var student={
+//     id:1,
+//     name:"ali",
+//     age:10,
+//     isFired:true,
+//     hobbies:["drawing","reading","writing"],
+//     display:function(){
+//         console.log(student.name,this.age);
+//     }
+// }
+
+
+// var student2={
+//     id:1,
+//     name:"ali",
+//     age:50,
+//     isFired:true,
+//     hobbies:["drawing","reading","writing"],
+//     display:function(){
+//         console.log(student.name,this.age);
+//     }
+// }
+
+// get data from object
+// console.log(student.name);  
+// console.log(student["name"])
+
+// var y = "age"
+// console.log(student2[y]);
+// console.log(y);
+
+
+
+// var y="name"
+// log(student.y); ===========>xxxxxxx
+// console.log(student[y]);
+
+
+
+// set data in object
+// student.name="hamada"
+// student["name"]="shahd"
+// console.log(student);
+
+// console.log(student.hobbies[1]);
+// student.hobbies[1]="song"
+// console.log(student);
+
+
+//for in
+// for(var k in student){
+//     console.log(k , student.k);  
+//     console.log(k , student[k]);
+// }
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// =====> RegExp
+// var phoneRegex=/^(01)(0|1|2|5)[0-9]{8}$/
+// https://regex101.com/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// ---------- Bom
+
+// console.log(window); 
+
+//   var x = 10
+//   console.log(x);
+//   console.log(window.x);
+
+// function test(){
+//     console.log("hello");
+    
+// }
+// test()
+
+  
+  
+// window.alert()
+// window.prompt()
+// window.confirm()
+
+
+//======> getSelection ---> in html
+
+
+
+//======> open and close new window
+
+// var newWin;
+// function openNewWin(){
+//    newWin = open("index2.html","_blank","width=400,height=300")
+// }
+
+// function closeWin(){
+//     newWin.close()
+// }
+
+
+
+// ------> setInterval and clearInterval
+
+
+// setInterval(function(){
+//     alert("Hello")
+// },2000) ---->
+
+
+//  var s = setInterval(function(){
+//     alert("Hello Abdallah");
+    
+// },2000)
+
+
+// clearInterval(s)
+// var s = setInterval(function(){
+//     alert("Hello")
+// },3000)
+
+
+
+// -------> setTimeout and clearTimeout
+
+// setTimeout(function(){
+//     alert ("Hello Caro")
+// },1000)
+
+// Q
+// function test(){
+//     alert("Hello")
+//     setTimeout(test,2000)
+// }
+// test()
+
+// clearTimeout()
+// var out;
+// function test(){
+//     alert("Hello")
+//    out = setTimeout(test,2000)
+// }
+
+// test()
+
+ 
+
+/////////////////// ------
+//  1- screen
+// 1- avail height
+// 2- height
+// 3- avail width
+// 4- width
+
+
+// 2- Navigator
+// console.log(navigator.onLine);
+// console.log(navigator.language);
+// console.log(navigator.cookieEnabled);
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ------- 3- location
+
+//----- 1- property
+// 1- href (getter, setter)
+// console.log( location.href); ------> getter
+// location.href="index2.html" ------ setter
+
+// setTimeout(function(){
+// location.href="index2.html"
+// },2000)  ----> replace for exam
+
+// 2- search
+// in html1 and html2
+
+// 3- hash
+
+// ----- 2- methods
+// location.reload()
+// replace and assign
+
+// ------- 3- history
 
 
 
