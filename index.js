@@ -814,5 +814,218 @@ var w = 20
 
 // ------- 3- history
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+//  Day 4
+
+
+// Bom (location and history)
+// Dom
+// Events
+
+
+// ------- 1- location
+
+//----- 1- property
+// 1- href (getter, setter)
+
+// console.log( location.href); ------> getter
+// location.href="index2.html" ------ setter
+
+// setTimeout(function(){
+// location.href="index2.html"
+// },2000)
+// 
+//   ----> replace for exam
+
+// 2- search
+
+// 3- hash
+
+// ----- 2- methods
+// location.reload()
+// replace and assign
+
+// ------- 2- history
+// history.back()
+// history.forward()
+// history.go()
+
+// ============================ Dom
+// document.title="MEARN"
+// document.writeln(`<h1>Hello</h1>`)
+// document.bgColor="red"
+
+// 1- Get Elements ==========================================================
+
+// console.log(document.getElementById("h1_Body"));
+// document.getElementById("h1Id").addEventListener("click", function () {
+//     this.style.color = "red";
+//   })
+// console.log(document.getElementsByClassName("h1_class")[1]);
+// console.log(document.getElementsByName("h2"));
+
+// console.log(document.getElementsByTagName("h1"));
+
+// console.log(document.querySelector(".h1_class")); ====> id
+// console.log(document.querySelector(".h1_class")); ====> first index match cond
+// console.log(document.querySelectorAll(".h1_class")); ======> all class
+
+// 2- Collections ==========================================================
+// console.log(document.forms);
+// console.log(document.images);
+// console.log(document.links[0].href);
+
+// 3- Set or Add Elements ==========================================================
+// document.forms[0].input1.value = "Abdallah"
+// document.links[1].href="index2.html"
+// document.getElementById("para1").textContent="Shahad"
+
+//  var ele = document.getElementById("para1");
+//       ele.style.backgroundColor = "teal";
+//       ele.style.width = "400px";
+//       ele.style.padding = "40px";
+//       ele.style.color = "white";
+// //     OR
+//      ele.style.cssText = "background-color: teal; width: 400px; padding: 40px; color: white";
+// //     OR
+//       ele.setAttribute("style", "background-color: teal; width: 400px; padding: 40px; color: white");
+
+// a- ADD Img ===============
+// document.getElementById("imgId").src = "img/images (2).jpeg"
+// document.getElementsByTagName("img")[0].src = "img/images (2).jpeg"
+// // Or
+// document.getElementsByTagName("img")[0].setAttribute("style","width: 100px; height: 100px")
+
+
+// b- Add Content ===========================
+
+    // var element = document.getElementById("h1Id");
+    // element.innerHTML = "Hello in our new site"
+        // element.innerText = "Hello in our new site2"
+            // element.textContent = "Hello in our new site3"
+
+
+
+// textContent vs innerText for search ===================================
+// console.log(document.getElementById("div_ID").innerText);
+// console.log(document.getElementById("div_ID").textContent);
+
+
+// 4- Create element ========================================================================
+//   var newEle = document.createElement("h2");
+//   newEle.innerHTML = "This is a new header";
+
+//   var ele =  newEle.innerHTML = "This is a new header";
+//   console.log(ele);
+
+//   document.body.appendChild(newEle);
+
+
+// var newEle= document.createElement("h3");
+
+// newEle.innerHTML = "This is a new header";
+
+// console.log(newEle);
+// document.body.appendChild(newEle);
+
+
+
+// 5- Remove element ========================================================================
+
+//  document.getElementById("div_ID").remove();
+
+
+
+// 6- Events ========================================================================
+
+// First way
+//  function sayhello() {
+//       alert("hello");
+//     }
+//     sayhello();
+
+// Second way
+// document.getElementById("eventBtn").onclick = function sayHello(){
+//     alert("hello");
+// }
+
+// document.getElementById("div_ID").onclick = function color(){
+//     this.style.color = "red";
+// }
+
+// third way  ==== EventListener
+// addEventListener("eventType", callbackFunction);
+
+// document.getElementById("eventBtn").addEventListener("click", function(){
+//     alert("hello by EventListener");
+//         this.style.backgroundColor = "red";
+
+
+// })
+
+// removeEventListener
+// document.getElementById("eventBtn").removeEventListener("click");
+
+// Events Types =================================================
+// 1- Mouse Events
+
+// let MouseEvents = ["click", "dblclick", "mousedown", "mouseup", "mousemove", "mouseover", "mouseout", "mouseenter", "mouseleave", "contextmenu"];
+
+// let mouseEvents = document.getElementById("div_event");
+
+// 1
+//  mouseEvents.ondblclick = function(){
+//     this.style.backgroundColor = "red";
+// }
+
+// 2
+// mouseEvents.onmousedown = function(){
+//     this.style.backgroundColor = "blue";
+// }
+
+// // 3
+// mouseEvents.onmouseup = function(event){
+//     event.target.style.backgroundColor = "green"
+
+// }
+
+// // 4
+// mouseEvents.onmousemove = function (event) {
+//   event.target.style.backgroundColor = "teal";
+// };
+
+// mouseEvents.onmouseout = function () {
+//   this.style.backgroundColor = "";
+// };
+
+
+// 2- Keyboard Events ====================================
+
+// var input = document.getElementById("input_ID");
+
+//     input.onkeydown = function (eve) {
+//       console.log("onkeydown");
+//     };
+
+//     input.onkeyup = function (eve) {
+//       console.log("onkeyup");
+//     };
+
+   //  // Form Events
+   //  var form = document.getElementById("form_Id");
+   //  form.onsubmit = function (eve) {
+   //    eve.preventDefault();
+   //    alert("Form submitted but blocked by JS");
+   //  };
+
+
+    // preventDefault 
+// document.getElementById("linkId").onclick= function(event){
+//   event.preventDefault();
+//   alert("Link Clicked")
+// }
+
+
 
 
